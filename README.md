@@ -104,7 +104,7 @@ tmodel-ccs2018.github.io \
 ```
 
 #### Step 3: set bandwidth to zero for stimulating crash
-Modify configuration of the simulation. Set `hosts.4uthority.bandwidth_down` and `hosts.4uthority.bandwidth_up` of at least 5 authorities to be `0 kilobit` in file ***./tornet-0.01/shadow.config.yaml***
+Modify configuration of the simulation. Set `hosts.4uthority.bandwidth_down` and `hosts.4uthority.bandwidth_up` of at least half authorities (i.e., 5 out of 9) to be `0 kilobit` in file ***./tornet-0.01/shadow.config.yaml***
 
 
 #### Step 4: now you can run a simulation and process the results
