@@ -122,3 +122,12 @@ tornettools archive tornet-0.01
 ```
 
 Performance metrics are plotted in the graph files in the pdfs directory.
+
+
+### Some relevant documents
+
+Simulation configuration for shadow: [shadow.config.yaml](https://shadow.github.io/docs/guide/shadow_config_spec.html)
+
+Network configuration for shadow (abstract how nodes connect): [network](https://shadow.github.io/docs/guide/network_graph_spec.html)
+
+Example for Tor network with shadow (also under path ***./test/simulTor***): [Tor example](https://shadow.github.io/docs/guide/getting_started_tor.html)
