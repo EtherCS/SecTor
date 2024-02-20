@@ -387,35 +387,6 @@ format_networkstatus_vote(crypto_pk_t *private_signing_key,
                                       cert->cache_info.signed_descriptor_len));
   }
 
-  // {
-  //   char cwd[1024]; // Allocate a buffer to store the current working directory
-  //   if (getcwd(cwd, sizeof(cwd)) != NULL) {
-  //       // printf("jianting Current working directory: %s\n", cwd);
-  //       log_info(LD_DIR, "jianting Current working directory");
-  //       log_info(LD_DIR, cwd);
-  //   }
-  //   FILE *source_file;
-  //   // Open the source file for reading
-  //   source_file = fopen("../../../relay-info", "r");
-  //   if (source_file == NULL) {
-  //       log_info(LD_DIR, "jianting Error opening source file");
-  //       return 1;
-  //   }
-  //   char *line = NULL;
-  //   size_t len = 0;
-  //   ssize_t read;
-
-  //   while ((read = getline(&line, &len, source_file)) != -1) {
-  //       // printf("Line: %s", line); // Do whatever you want with the line here
-  //       // log_info(LD_DIR, line);
-  //       smartlist_add_strdup(chunks, line);
-  //   }
-  //   log_info(LD_DIR, "jianting last relay info is");
-  //   log_info(LD_DIR, line);
-  //   free(line);
-  //   fclose(source_file);
-  // }
-
   SMARTLIST_FOREACH_BEGIN(v3_ns->routerstatus_list, vote_routerstatus_t *,
                           vrs) {
       char *rsf;
@@ -435,9 +406,10 @@ format_networkstatus_vote(crypto_pk_t *private_signing_key,
   } SMARTLIST_FOREACH_END(vrs);
 
   smartlist_add_strdup(chunks, "directory-footer\n");
-
+  
   // jianting add garbage
-  for (int i=0; i < 20000; i++) {
+  int gb_num = 20000;
+  for (int i=0; i < gb_num; i++) {
     smartlist_add_strdup(chunks, "This is a garbage information\n");
   }
 
