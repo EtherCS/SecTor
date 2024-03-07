@@ -1,0 +1,148 @@
+general:
+  bootstrap_end_time: 300
+  stop_time: 130000
+  progress: true
+  template_directory: shadow.data.template
+network:
+  use_shortest_path: false
+  graph:
+    type: gml
+    file:
+      path: /home/jianting/rust/github.com/shadow/src/test/tor9/tools/tornet-1/conf/atlas_v201801.shadow_v2.gml.xz
+      compression: xz
+hosts:
+  4uthority1:
+    network_node_id: 327
+    ip_addr: 100.0.0.1
+    bandwidth_down: 1000000 kilobit
+    bandwidth_up: 1000000 kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority1 --Nickname 4uthority1 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority2:
+    network_node_id: 1410
+    ip_addr: 100.0.0.2
+    bandwidth_down: input kilobit
+    bandwidth_up: input kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority2 --Nickname 4uthority2 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority3:
+    network_node_id: 1410
+    ip_addr: 100.0.0.3
+    bandwidth_down: input kilobit
+    bandwidth_up: input kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority3 --Nickname 4uthority3 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority4:
+    network_node_id: 1640
+    ip_addr: 100.0.0.4
+    bandwidth_down: input kilobit
+    bandwidth_up: input kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority4 --Nickname 4uthority4 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority5:
+    network_node_id: 1410
+    ip_addr: 100.0.0.5
+    bandwidth_down: input kilobit
+    bandwidth_up: input kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority5 --Nickname 4uthority5 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority6:
+    network_node_id: 1151
+    ip_addr: 100.0.0.6
+    bandwidth_down: 1000000 kilobit
+    bandwidth_up: 1000000 kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority6 --Nickname 4uthority6 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority7:
+    network_node_id: 1151
+    ip_addr: 100.0.0.7
+    bandwidth_down: 1000000 kilobit
+    bandwidth_up: 1000000 kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority7 --Nickname 4uthority7 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority8:
+    network_node_id: 327
+    ip_addr: 100.0.0.8
+    bandwidth_down: 1000000 kilobit
+    bandwidth_up: 1000000 kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority8 --Nickname 4uthority8 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
+  4uthority9:
+    network_node_id: 1640
+    ip_addr: 100.0.0.9
+    bandwidth_down: input kilobit
+    bandwidth_up: input kilobit
+    processes:
+    - path: tor
+      args: --Address 4uthority9 --Nickname 4uthority9 --defaults-torrc torrc-defaults
+        -f torrc
+      start_time: 1
+      expected_final_state: running
+    - path: ~/.local/bin/oniontrace
+      args: Mode=log TorControlPort=9051 LogLevel=info Events=BW,CIRC
+      start_time: 2
+      expected_final_state: running
