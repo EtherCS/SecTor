@@ -288,6 +288,8 @@ router_reload_consensus_networkstatus(void)
   for (flav = 0; flav < N_CONSENSUS_FLAVORS; ++flav) {
     const char *flavor = networkstatus_get_flavor_name(flav);
     char *fname = networkstatus_get_cache_fname(flav, flavor, 0);
+    // char *fname = "../../../my-cached-consensus";
+    // log_info(LD_DIR, "jianting reload file name is %s", fname);
     reload_consensus_from_file(fname, flavor, flags, NULL);
     tor_free(fname);
 

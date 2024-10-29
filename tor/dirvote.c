@@ -72,6 +72,9 @@
 /* Algorithm to use for the bandwidth file digest. */
 #define DIGEST_ALG_BW_FILE DIGEST_SHA256
 
+// Jianting
+int has_added_relay = 5;
+
 /**
  * \file dirvote.c
  * \brief Functions to compute directory consensus, and schedule voting.
@@ -406,11 +409,19 @@ format_networkstatus_vote(crypto_pk_t *private_signing_key,
   } SMARTLIST_FOREACH_END(vrs);
 
   smartlist_add_strdup(chunks, "directory-footer\n");
-  
-  // jianting add garbage
-  int gb_num = 20000;
-  for (int i=0; i < gb_num; i++) {
-    smartlist_add_strdup(chunks, "This is a garbage information\n");
+
+  // jianting add virtual relay
+  // each relay contains 527 characters
+  log_info(LD_DIR, "jianting add relays");
+  int relay_num = 9500;
+  char relay_info[528];
+  for (int i=0; i<527; i++) {
+    relay_info[i] = 'T';
+  }
+  relay_info[527] = '\0';
+  for (int i=0; i < relay_num; i++) {
+    smartlist_add_strdup(chunks, relay_info);
+    smartlist_add_strdup(chunks, "\n");
   }
 
   /* The digest includes everything up through the space after
@@ -3352,7 +3363,7 @@ dirvote_add_vote(const char *vote_body, time_t time_posted,
   //   free(line);
   //   fclose(source_file);
   // }
-  log_info(LD_DIR, "jianting receive vote_body is %s", vote_body);
+  // log_info(LD_DIR, "jianting receive vote_body is %s", vote_body);
   pending_vote->vote_body = new_cached_dir(tor_strndup(vote_body,
                                                        end_of_vote-vote_body),
                                            vote->published);
