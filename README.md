@@ -105,7 +105,7 @@ tmodel-ccs2018.github.io \
 
 #### Step 3: set bandwidths to a low value for stimulating crash
 Modify configuration of the simulation. Set `hosts.4uthority.bandwidth_down` and `hosts.4uthority.bandwidth_up` of at least half authorities (i.e., 5 out of 9) to be a low value (e.g.,`0 kilobit`) in file *./tornet-0.01/shadow.config.yaml*. A similar .yaml file can be found in [shadow.config.yaml](https://github.com/EtherCS/SecTor/blob/main/test/realTor/shadow.config.yaml), where authority2, 6, 7, 8, 9 can be deemed as crashed.
-> Note that some authorities may share the same logic node in the simulated network (with the same *network_node_id*). Setting the bandwidth for an authority will also affect other authorities that share the same network node.
+> Note that some authorities associated to a node may share the same logic node **but not the bandwidth** (i.e., each authority/host has individual bandwidth_down and bandwidth_up specified in shadow.config.yaml) in the simulated network (with the same *network_node_id*). Setting the bandwidth for an authority will also affect other authorities that share the same network node.
 
 
 #### Step 4: now you can run a simulation and process the results
