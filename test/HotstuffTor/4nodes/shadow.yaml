@@ -52,115 +52,96 @@ network:
           source 1
           target 2
           latency "33111 us"
-          packet_loss 0.0
         ]
         edge [
           source 1
           target 3
           latency "15085 us"
-          packet_loss 0.0
         ]
         edge [
           source 1
           target 4
           latency "23553 us"
-          packet_loss 0.0
-        ]
-        edge [
-          source 101
-          target 1
-          latency "23553 us"
-          packet_loss 0.0
         ]
         edge [
           source 2
           target 3
           latency "7641 us"
-          packet_loss 0.0
         ]
         edge [
           source 2
           target 4
           latency "13479 us"
-          packet_loss 0.0
-        ]
-        edge [
-          source 102
-          target 2
-          latency "23553 us"
-          packet_loss 0.0
         ]
         edge [
           source 3
           target 4
           latency "7206 us"
-          packet_loss 0.0
         ]
         edge [
           source 103
           target 3
           latency "23553 us"
-          packet_loss 0.0
         ]
         edge [
           source 101
           target 1
           latency "23553 us"
-          packet_loss 0.0
+        ]
+        edge [
+          source 102
+          target 2
+          latency "23553 us"
+        ]
+        edge [
+          source 103
+          target 3
+          latency "23553 us"
         ]
         edge [
           source 104
           target 4
           latency "31119 us"
-          packet_loss 0.0
         ]
         edge [
           source 1
           target 1
           latency "19103 us"
-          packet_loss 0.0
         ]
         edge [
           source 2
           target 2
           latency "19103 us"
-          packet_loss 0.0
         ]
         edge [
           source 3
           target 3
           latency "19103 us"
-          packet_loss 0.0
         ]
         edge [
           source 4
           target 4
           latency "7206 us"
-          packet_loss 0.0
         ]
         edge [
           source 101
           target 101
           latency "7206 us"
-          packet_loss 0.0
         ]
         edge [
           source 102
           target 102
           latency "7206 us"
-          packet_loss 0.0
         ]
         edge [
           source 103
           target 103
           latency "7206 us"
-          packet_loss 0.0
         ]
         edge [
           source 104
           target 104
           latency "7206 us"
-          packet_loss 0.0
         ]
       ]
 hosts:
@@ -170,8 +151,8 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./node
-      args: -vvv run --keys ../../../shadow-node-0.json --committee ../../../shadow-committee.json --store .db-0 --parameters ../../../.parameters.json
+    - path: ../node
+      args: -vvv run --keys ../../../.node-0.json --committee ../../../.committee.json --store .db-0 --parameters ../../../.parameters.json
       start_time: 1
       expected_final_state: running
   node2:
@@ -180,8 +161,8 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./node
-      args: -vvv run --keys ../../../shadow-node-1.json --committee ../../../shadow-committee.json --store .db-1 --parameters ../../../.parameters.json
+    - path: ../node
+      args: -vvv run --keys ../../../.node-1.json --committee ../../../.committee.json --store .db-1 --parameters ../../../.parameters.json
       start_time: 1
       expected_final_state: running
   node3:
@@ -190,8 +171,8 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./node
-      args: -vvv run --keys ../../../shadow-node-2.json --committee ../../../shadow-committee.json --store .db-2 --parameters ../../../.parameters.json
+    - path: ../node
+      args: -vvv run --keys ../../../.node-2.json --committee ../../../.committee.json --store .db-2 --parameters ../../../.parameters.json
       start_time: 1
       expected_final_state: running
   node4:
@@ -200,8 +181,8 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./node
-      args: -vvv run --keys ../../../shadow-node-3.json --committee ../../../shadow-committee.json --store .db-3 --parameters ../../../.parameters.json
+    - path: ../node
+      args: -vvv run --keys ../../../.node-3.json --committee ../../../.committee.json --store .db-3 --parameters ../../../.parameters.json
       start_time: 1
       expected_final_state: running
   client1:
@@ -210,7 +191,7 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./client
+    - path: ../client
       args: 100.0.0.1:9004 --size 512 --rate 250 --timeout 1000
       start_time: 1
       expected_final_state: running
@@ -220,7 +201,7 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./client
+    - path: ../client
       args: 100.0.0.2:9005 --size 512 --rate 250 --timeout 1000
       start_time: 1
       expected_final_state: running
@@ -230,7 +211,7 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./client
+    - path: ../client
       args: 100.0.0.3:9006 --size 512 --rate 250 --timeout 1000
       start_time: 1
       expected_final_state: running
@@ -240,7 +221,7 @@ hosts:
     bandwidth_down: 15000 kilobit
     bandwidth_up: 15000 kilobit
     processes:
-    - path: ./client
+    - path: ../client
       args: 100.0.0.4:9007 --size 512 --rate 250 --timeout 1000
       start_time: 1
       expected_final_state: running
