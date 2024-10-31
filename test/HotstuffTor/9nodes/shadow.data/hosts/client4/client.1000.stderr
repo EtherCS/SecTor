@@ -1,0 +1,6 @@
+[2000-01-01T00:00:01.000Z INFO  client] Node address: 100.0.0.4:9012
+[2000-01-01T00:00:01.000Z INFO  client] Transactions size: 512 B
+[2000-01-01T00:00:01.000Z INFO  client] Transactions rate: 250 tx/s
+[2000-01-01T00:00:01.000Z INFO  client] Waiting for all nodes to be online...
+[2000-01-01T00:00:01.000Z INFO  client] Waiting for all nodes to be synchronized...
+[2000-01-01T00:00:03.062Z INFO  client] Start sending transactions

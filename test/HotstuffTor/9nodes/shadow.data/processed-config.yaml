@@ -1,0 +1,351 @@
+general:
+  stop_time: 150 sec
+  seed: 1
+  parallelism: 0
+  bootstrap_end_time: 50 sec
+  log_level: info
+  heartbeat_interval: 1 sec
+  data_directory: shadow.data
+  template_directory: null
+  progress: true
+  model_unblocked_syscall_latency: false
+network:
+  graph:
+    type: gml
+    inline: "graph [\n  node [\n    id 1\n    bandwidth_down \"62176 Kibit\"\n    bandwidth_up \"27512 Kibit\"\n  ]\n  node [\n    id 2\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 3\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 4\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  node [\n    id 5\n    bandwidth_down \"62176 Kibit\"\n    bandwidth_up \"27512 Kibit\"\n  ]\n  node [\n    id 6\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 7\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 8\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  node [\n    id 9\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  node [\n    id 101\n    bandwidth_down \"62176 Kibit\"\n    bandwidth_up \"27512 Kibit\"\n  ]\n  node [\n    id 102\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 103\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 104\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  node [\n    id 105\n    bandwidth_down \"62176 Kibit\"\n    bandwidth_up \"27512 Kibit\"\n  ]\n  node [\n    id 106\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 107\n    bandwidth_down \"48840 Kibit\"\n    bandwidth_up \"10960 Kibit\"\n  ]\n  node [\n    id 108\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  node [\n    id 109\n    bandwidth_down \"85096 Kibit\"\n    bandwidth_up \"55248 Kibit\"\n  ]\n  edge [\n    source 1\n    target 2\n    latency \"33111 us\"\n  ]\n  edge [\n    source 1\n    target 3\n    latency \"15085 us\"\n  ]\n  edge [\n    source 1\n    target 4\n    latency \"23553 us\"\n  ]\n  edge [\n    source 1\n    target 5\n    latency \"23553 us\"\n  ]\n  edge [\n    source 1\n    target 6\n    latency \"23553 us\"\n  ] \n  edge [\n    source 1\n    target 7\n    latency \"23553 us\"\n  ] \n  edge [\n    source 1\n    target 8\n    latency \"23553 us\"\n  ]\n  edge [\n    source 1\n    target 9\n    latency \"23553 us\"\n  ]\n  edge [\n    source 2\n    target 3\n    latency \"7641 us\"\n  ]\n  edge [\n    source 2\n    target 4\n    latency \"13479 us\"\n  ]\n  edge [\n    source 2\n    target 5\n    latency \"13479 us\"\n  ]\n  edge [\n    source 2\n    target 6\n    latency \"13479 us\"\n  ]\n  edge [\n    source 2\n    target 7\n    latency \"13479 us\"\n  ]\n  edge [\n    source 2\n    target 8\n    latency \"13479 us\"\n  ]\n  edge [\n    source 2\n    target 9\n    latency \"13479 us\"\n  ]\n  edge [\n    source 3\n    target 4\n    latency \"7206 us\"\n  ]\n  edge [\n    source 3\n    target 5\n    latency \"7206 us\"\n  ]\n  edge [\n    source 3\n    target 6\n    latency \"7206 us\"\n  ]\n  edge [\n    source 3\n    target 7\n    latency \"7206 us\"\n  ]\n  edge [\n    source 3\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 3\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 4\n    target 5\n    latency \"7206 us\"\n  ]\n  edge [\n    source 4\n    target 6\n    latency \"7206 us\"\n  ]\n  edge [\n    source 4\n    target 7\n    latency \"7206 us\"\n  ]\n  edge [\n    source 4\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 4\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 5\n    target 6\n    latency \"7206 us\"\n  ]\n  edge [\n    source 5\n    target 7\n    latency \"7206 us\"\n  ]\n  edge [\n    source 5\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 5\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 6\n    target 7\n    latency \"7206 us\"\n  ]\n  edge [\n    source 6\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 6\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 7\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 7\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 8\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 101\n    target 1\n    latency \"23553 us\"\n  ]\n  edge [\n    source 102\n    target 2\n    latency \"23553 us\"\n  ]\n  edge [\n    source 103\n    target 3\n    latency \"23553 us\"\n  ]\n  edge [\n    source 104\n    target 4\n    latency \"31119 us\"\n  ]\n  edge [\n    source 105\n    target 5\n    latency \"23553 us\"\n  ]\n  edge [\n    source 106\n    target 6\n    latency \"23553 us\"\n  ]\n  edge [\n    source 107\n    target 7\n    latency \"23553 us\"\n  ]\n  edge [\n    source 108\n    target 8\n    latency \"23553 us\"\n  ]\n  edge [\n    source 109\n    target 9\n    latency \"23553 us\"\n  ]\n  edge [\n    source 1\n    target 1\n    latency \"19103 us\"\n  ]\n  edge [\n    source 2\n    target 2\n    latency \"19103 us\"\n  ]\n  edge [\n    source 3\n    target 3\n    latency \"19103 us\"\n  ]\n  edge [\n    source 4\n    target 4\n    latency \"7206 us\"\n  ]\n  edge [\n    source 5\n    target 5\n    latency \"7206 us\"\n  ]\n  edge [\n    source 6\n    target 6\n    latency \"7206 us\"\n  ]\n  edge [\n    source 7\n    target 7\n    latency \"7206 us\"\n  ]\n  edge [\n    source 8\n    target 8\n    latency \"7206 us\"\n  ]\n  edge [\n    source 9\n    target 9\n    latency \"7206 us\"\n  ]\n  edge [\n    source 101\n    target 101\n    latency \"7206 us\"\n  ]\n  edge [\n    source 102\n    target 102\n    latency \"7206 us\"\n  ]\n  edge [\n    source 103\n    target 103\n    latency \"7206 us\"\n  ]\n  edge [\n    source 104\n    target 104\n    latency \"7206 us\"\n  ]\n  edge [\n    source 105\n    target 105\n    latency \"7206 us\"\n  ]\n  edge [\n    source 106\n    target 106\n    latency \"7206 us\"\n  ]\n  edge [\n    source 107\n    target 107\n    latency \"7206 us\"\n  ]\n  edge [\n    source 108\n    target 108\n    latency \"7206 us\"\n  ]\n  edge [\n    source 109\n    target 109\n    latency \"7206 us\"\n  ]\n]\n"
+  use_shortest_path: true
+experimental:
+  use_sched_fifo: false
+  use_syscall_counters: true
+  use_object_counters: true
+  use_preload_libc: true
+  use_preload_openssl_rng: true
+  use_preload_openssl_crypto: false
+  use_memory_manager: true
+  use_cpu_pinning: true
+  use_worker_spinning: true
+  runahead: 1 ms
+  use_dynamic_runahead: false
+  socket_send_buffer: 131072 B
+  socket_send_autotune: true
+  socket_recv_buffer: 174760 B
+  socket_recv_autotune: true
+  interface_qdisc: fifo
+  host_heartbeat_log_level: info
+  host_heartbeat_log_info:
+  - node
+  host_heartbeat_interval: 1 sec
+  strace_logging_mode: off
+  max_unapplied_cpu_latency: 1 μs
+  unblocked_syscall_latency: 1 μs
+  unblocked_vdso_latency: 10 ns
+  scheduler: thread-per-core
+  log_errors_to_tty: true
+  use_new_tcp: false
+hosts:
+  client1:
+    network_node_id: 101
+    processes:
+    - path: ../client
+      args: 100.0.0.1:9009 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.1
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client2:
+    network_node_id: 102
+    processes:
+    - path: ../client
+      args: 100.0.0.2:9010 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.2
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client3:
+    network_node_id: 103
+    processes:
+    - path: ../client
+      args: 100.0.0.3:9011 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.3
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client4:
+    network_node_id: 104
+    processes:
+    - path: ../client
+      args: 100.0.0.4:9012 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.4
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client5:
+    network_node_id: 105
+    processes:
+    - path: ../client
+      args: 100.0.0.5:9013 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.5
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client6:
+    network_node_id: 106
+    processes:
+    - path: ../client
+      args: 100.0.0.6:9014 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.6
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client7:
+    network_node_id: 107
+    processes:
+    - path: ../client
+      args: 100.0.0.7:9015 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.7
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client8:
+    network_node_id: 108
+    processes:
+    - path: ../client
+      args: 100.0.0.8:9016 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.8
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  client9:
+    network_node_id: 109
+    processes:
+    - path: ../client
+      args: 100.0.0.9:9017 --size 512 --rate 250 --timeout 1000
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.1.9
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node1:
+    network_node_id: 1
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-0.json --committee ../../../.committee.json --store .db-0 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.1
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node2:
+    network_node_id: 2
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-1.json --committee ../../../.committee.json --store .db-1 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.2
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node3:
+    network_node_id: 3
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-2.json --committee ../../../.committee.json --store .db-2 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.3
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node4:
+    network_node_id: 4
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-3.json --committee ../../../.committee.json --store .db-3 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.4
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node5:
+    network_node_id: 5
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-4.json --committee ../../../.committee.json --store .db-4 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.5
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node6:
+    network_node_id: 6
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-5.json --committee ../../../.committee.json --store .db-5 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.6
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node7:
+    network_node_id: 7
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-6.json --committee ../../../.committee.json --store .db-6 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.7
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node8:
+    network_node_id: 8
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-7.json --committee ../../../.committee.json --store .db-7 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.8
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B
+  node9:
+    network_node_id: 9
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-8.json --committee ../../../.committee.json --store .db-8 --parameters ../../../.parameters.json
+      environment: {}
+      start_time: 1 sec
+      shutdown_time: null
+      shutdown_signal: SIGTERM
+      expected_final_state: running
+    ip_addr: 100.0.0.9
+    bandwidth_down: 15000 Kbit
+    bandwidth_up: 15000 Kbit
+    host_options:
+      log_level: null
+      pcap_enabled: false
+      pcap_capture_size: 65535 B

@@ -1,0 +1,597 @@
+general:
+  bootstrap_end_time: 50
+  stop_time: 150
+  progress: true
+
+network:
+  graph:
+    type: gml
+    inline: |
+      graph [
+        node [
+          id 1
+          bandwidth_down "62176 Kibit"
+          bandwidth_up "27512 Kibit"
+        ]
+        node [
+          id 2
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 3
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 4
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        node [
+          id 5
+          bandwidth_down "62176 Kibit"
+          bandwidth_up "27512 Kibit"
+        ]
+        node [
+          id 6
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 7
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 8
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        node [
+          id 9
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        node [
+          id 101
+          bandwidth_down "62176 Kibit"
+          bandwidth_up "27512 Kibit"
+        ]
+        node [
+          id 102
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 103
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 104
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        node [
+          id 105
+          bandwidth_down "62176 Kibit"
+          bandwidth_up "27512 Kibit"
+        ]
+        node [
+          id 106
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 107
+          bandwidth_down "48840 Kibit"
+          bandwidth_up "10960 Kibit"
+        ]
+        node [
+          id 108
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        node [
+          id 109
+          bandwidth_down "85096 Kibit"
+          bandwidth_up "55248 Kibit"
+        ]
+        edge [
+          source 1
+          target 2
+          latency "33111 us"
+        ]
+        edge [
+          source 1
+          target 3
+          latency "15085 us"
+        ]
+        edge [
+          source 1
+          target 4
+          latency "23553 us"
+        ]
+        edge [
+          source 1
+          target 5
+          latency "23553 us"
+        ]
+        edge [
+          source 1
+          target 6
+          latency "23553 us"
+        ] 
+        edge [
+          source 1
+          target 7
+          latency "23553 us"
+        ] 
+        edge [
+          source 1
+          target 8
+          latency "23553 us"
+        ]
+        edge [
+          source 1
+          target 9
+          latency "23553 us"
+        ]
+        edge [
+          source 2
+          target 3
+          latency "7641 us"
+        ]
+        edge [
+          source 2
+          target 4
+          latency "13479 us"
+        ]
+        edge [
+          source 2
+          target 5
+          latency "13479 us"
+        ]
+        edge [
+          source 2
+          target 6
+          latency "13479 us"
+        ]
+        edge [
+          source 2
+          target 7
+          latency "13479 us"
+        ]
+        edge [
+          source 2
+          target 8
+          latency "13479 us"
+        ]
+        edge [
+          source 2
+          target 9
+          latency "13479 us"
+        ]
+        edge [
+          source 3
+          target 4
+          latency "7206 us"
+        ]
+        edge [
+          source 3
+          target 5
+          latency "7206 us"
+        ]
+        edge [
+          source 3
+          target 6
+          latency "7206 us"
+        ]
+        edge [
+          source 3
+          target 7
+          latency "7206 us"
+        ]
+        edge [
+          source 3
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 3
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 4
+          target 5
+          latency "7206 us"
+        ]
+        edge [
+          source 4
+          target 6
+          latency "7206 us"
+        ]
+        edge [
+          source 4
+          target 7
+          latency "7206 us"
+        ]
+        edge [
+          source 4
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 4
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 5
+          target 6
+          latency "7206 us"
+        ]
+        edge [
+          source 5
+          target 7
+          latency "7206 us"
+        ]
+        edge [
+          source 5
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 5
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 6
+          target 7
+          latency "7206 us"
+        ]
+        edge [
+          source 6
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 6
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 7
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 7
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 8
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 101
+          target 1
+          latency "23553 us"
+        ]
+        edge [
+          source 102
+          target 2
+          latency "23553 us"
+        ]
+        edge [
+          source 103
+          target 3
+          latency "23553 us"
+        ]
+        edge [
+          source 104
+          target 4
+          latency "31119 us"
+        ]
+        edge [
+          source 105
+          target 5
+          latency "23553 us"
+        ]
+        edge [
+          source 106
+          target 6
+          latency "23553 us"
+        ]
+        edge [
+          source 107
+          target 7
+          latency "23553 us"
+        ]
+        edge [
+          source 108
+          target 8
+          latency "23553 us"
+        ]
+        edge [
+          source 109
+          target 9
+          latency "23553 us"
+        ]
+        edge [
+          source 1
+          target 1
+          latency "19103 us"
+        ]
+        edge [
+          source 2
+          target 2
+          latency "19103 us"
+        ]
+        edge [
+          source 3
+          target 3
+          latency "19103 us"
+        ]
+        edge [
+          source 4
+          target 4
+          latency "7206 us"
+        ]
+        edge [
+          source 5
+          target 5
+          latency "7206 us"
+        ]
+        edge [
+          source 6
+          target 6
+          latency "7206 us"
+        ]
+        edge [
+          source 7
+          target 7
+          latency "7206 us"
+        ]
+        edge [
+          source 8
+          target 8
+          latency "7206 us"
+        ]
+        edge [
+          source 9
+          target 9
+          latency "7206 us"
+        ]
+        edge [
+          source 101
+          target 101
+          latency "7206 us"
+        ]
+        edge [
+          source 102
+          target 102
+          latency "7206 us"
+        ]
+        edge [
+          source 103
+          target 103
+          latency "7206 us"
+        ]
+        edge [
+          source 104
+          target 104
+          latency "7206 us"
+        ]
+        edge [
+          source 105
+          target 105
+          latency "7206 us"
+        ]
+        edge [
+          source 106
+          target 106
+          latency "7206 us"
+        ]
+        edge [
+          source 107
+          target 107
+          latency "7206 us"
+        ]
+        edge [
+          source 108
+          target 108
+          latency "7206 us"
+        ]
+        edge [
+          source 109
+          target 109
+          latency "7206 us"
+        ]
+      ]
+hosts:
+  node1:
+    network_node_id: 1
+    ip_addr: 100.0.0.1
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-0.json --committee ../../../.committee.json --store .db-0 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node2:
+    network_node_id: 2
+    ip_addr: 100.0.0.2
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-1.json --committee ../../../.committee.json --store .db-1 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node3:
+    network_node_id: 3
+    ip_addr: 100.0.0.3
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-2.json --committee ../../../.committee.json --store .db-2 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node4:
+    network_node_id: 4
+    ip_addr: 100.0.0.4
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-3.json --committee ../../../.committee.json --store .db-3 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node5:
+    network_node_id: 5
+    ip_addr: 100.0.0.5
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-4.json --committee ../../../.committee.json --store .db-4 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node6:
+    network_node_id: 6
+    ip_addr: 100.0.0.6
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-5.json --committee ../../../.committee.json --store .db-5 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node7:
+    network_node_id: 7
+    ip_addr: 100.0.0.7
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-6.json --committee ../../../.committee.json --store .db-6 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node8:
+    network_node_id: 8
+    ip_addr: 100.0.0.8
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-7.json --committee ../../../.committee.json --store .db-7 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  node9:
+    network_node_id: 9
+    ip_addr: 100.0.0.9
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../node
+      args: -vvv run --keys ../../../.node-8.json --committee ../../../.committee.json --store .db-8 --parameters ../../../.parameters.json
+      start_time: 1
+      expected_final_state: running
+  client1:
+    network_node_id: 101
+    ip_addr: 100.0.1.1
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.1:9009 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client2:
+    network_node_id: 102
+    ip_addr: 100.0.1.2
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.2:9010 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client3:
+    network_node_id: 103
+    ip_addr: 100.0.1.3
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.3:9011 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client4:
+    network_node_id: 104
+    ip_addr: 100.0.1.4
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.4:9012 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client5:
+    network_node_id: 105
+    ip_addr: 100.0.1.5
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.5:9013 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client6:
+    network_node_id: 106
+    ip_addr: 100.0.1.6
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.6:9014 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client7:
+    network_node_id: 107
+    ip_addr: 100.0.1.7
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.7:9015 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client8:
+    network_node_id: 108
+    ip_addr: 100.0.1.8
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.8:9016 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
+  client9:
+    network_node_id: 109
+    ip_addr: 100.0.1.9
+    bandwidth_down: 15000 kilobit
+    bandwidth_up: 15000 kilobit
+    processes:
+    - path: ../client
+      args: 100.0.0.9:9017 --size 512 --rate 250 --timeout 1000
+      start_time: 1
+      expected_final_state: running
