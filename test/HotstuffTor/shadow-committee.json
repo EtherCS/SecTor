@@ -1,0 +1,56 @@
+{
+    "consensus": {
+        "authorities": {
+            "/7Li1Ex9sBs0s0lpHY/tGcJxNol6rT5XZk0zxPSiPzs=": {
+                "address": "100.0.0.4:9003",
+                "name": "/7Li1Ex9sBs0s0lpHY/tGcJxNol6rT5XZk0zxPSiPzs=",
+                "stake": 1
+            },
+            "5LL4w+kcZnuHvF8+vGvdyY/JpfTkVyHP7NNW1EJatjM=": {
+                "address": "100.0.0.1:9000",
+                "name": "5LL4w+kcZnuHvF8+vGvdyY/JpfTkVyHP7NNW1EJatjM=",
+                "stake": 1
+            },
+            "9RlG/M6jDxeaLp6hmIJJ+xiXqNfRgtJHGROLQ+cvaDI=": {
+                "address": "100.0.0.3:9002",
+                "name": "9RlG/M6jDxeaLp6hmIJJ+xiXqNfRgtJHGROLQ+cvaDI=",
+                "stake": 1
+            },
+            "A1fnbDFLU78oxsmRhMuECHYZUtIOacUaEZzh0orwCY4=": {
+                "address": "100.0.0.2:9001",
+                "name": "A1fnbDFLU78oxsmRhMuECHYZUtIOacUaEZzh0orwCY4=",
+                "stake": 1
+            }
+        },
+        "epoch": 1
+    },
+    "mempool": {
+        "authorities": {
+            "/7Li1Ex9sBs0s0lpHY/tGcJxNol6rT5XZk0zxPSiPzs=": {
+                "mempool_address": "100.0.0.4:9011",
+                "name": "/7Li1Ex9sBs0s0lpHY/tGcJxNol6rT5XZk0zxPSiPzs=",
+                "stake": 1,
+                "transactions_address": "100.0.0.4:9007"
+            },
+            "5LL4w+kcZnuHvF8+vGvdyY/JpfTkVyHP7NNW1EJatjM=": {
+                "mempool_address": "100.0.0.1:9008",
+                "name": "5LL4w+kcZnuHvF8+vGvdyY/JpfTkVyHP7NNW1EJatjM=",
+                "stake": 1,
+                "transactions_address": "100.0.0.1:9004"
+            },
+            "9RlG/M6jDxeaLp6hmIJJ+xiXqNfRgtJHGROLQ+cvaDI=": {
+                "mempool_address": "100.0.0.3:9010",
+                "name": "9RlG/M6jDxeaLp6hmIJJ+xiXqNfRgtJHGROLQ+cvaDI=",
+                "stake": 1,
+                "transactions_address": "100.0.0.3:9006"
+            },
+            "A1fnbDFLU78oxsmRhMuECHYZUtIOacUaEZzh0orwCY4=": {
+                "mempool_address": "100.0.0.2:9009",
+                "name": "A1fnbDFLU78oxsmRhMuECHYZUtIOacUaEZzh0orwCY4=",
+                "stake": 1,
+                "transactions_address": "100.0.0.2:9005"
+            }
+        },
+        "epoch": 1
+    }
+}

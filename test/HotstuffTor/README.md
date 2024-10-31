@@ -1,0 +1,1 @@
+shadow shadow.yaml > shadow.log
