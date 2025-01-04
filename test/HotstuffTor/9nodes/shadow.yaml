@@ -1,5 +1,5 @@
 general:
-  bootstrap_end_time: 50
+  bootstrap_end_time: 0
   stop_time: 150
   progress: true
 
