@@ -1,7 +1,7 @@
 {
     "consensus": {
         "sync_retry_delay": 10000,
-        "timeout_delay": 1000
+        "timeout_delay": 30000
     },
     "mempool": {
         "batch_size": 15000,
